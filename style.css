@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950;
+    @apply text-white;
+  }
+}
+
+.logo{
+  --icone-menu: gray;
+}
+
+li:is(:hover, :focus) .logo{
+  --icone-menu: white;
+}
+
+.color-icon{
+  --color: #c4c4c4;
+}
+
+.color-icon:is(:hover, :focus) {
+  --color: white;
+}
+
